@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="24.0" prefHeight="400.0" prefWidth="409.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="48.200011253356934" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="102.19998550415039" text="Name" />
+            <TableColumn fx:id="addressCol" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="phoneCol" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="majorCol" prefWidth="106.80003662109374" text="Major" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idT" layoutX="507.0" layoutY="36.0" />
+      <TextField fx:id="nameT" layoutX="507.0" layoutY="83.0" />
+      <TextField fx:id="addressT" layoutX="507.0" layoutY="141.0" />
+      <TextField fx:id="phoneT" layoutX="507.0" layoutY="187.0" />
+      <TextField fx:id="majorT" layoutX="507.0" layoutY="236.0" />
+      <Label layoutX="468.0" layoutY="40.0" text="ID" />
+      <Label layoutX="468.0" layoutY="87.0" text="Name" />
+      <Label layoutX="464.0" layoutY="145.0" text="Address" />
+      <Label layoutX="464.0" layoutY="191.0" text="Phone" />
+      <Label layoutX="464.0" layoutY="240.0" text="Major" />
+      <Button layoutX="556.0" layoutY="310.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button layoutX="556.0" layoutY="348.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button layoutX="556.0" layoutY="385.0" mnemonicParsing="false" onAction="#returnMenu" text="Return to Menu" />
+      <TextField fx:id="search" layoutX="507.0" layoutY="271.0" />
+      <Label layoutX="464.0" layoutY="275.0" text="Search" />
+   </children>
+</AnchorPane>
